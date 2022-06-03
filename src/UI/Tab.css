@@ -3,6 +3,7 @@
 	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 	text-align: center;
 	background-color: #143f6b;
-	width: 100%;
+	position: relative;
 	height: 70px;
+	margin: 10px;
 }

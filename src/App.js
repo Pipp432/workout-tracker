@@ -1,12 +1,13 @@
 import "./App.css";
 import AddWorkout from "./Components/AddWorkout";
 import WorkoutNode from "./Components/WorkoutNode";
+import TitleCard from "./UI/TitleCard";
 import { useState } from "react";
 
 function App() {
 	const [workouts, setWorkouts] = useState([
-		{ id: "0", activity: "swimming", duration: "1 hr", intensity: "10" },
-		{ id: "1", activity: "running", duration: "3 hr", intensity: "7" },
+		{ id: "0", activity: "Swimming", duration: "1 hr", intensity: "Easy" },
+		{ id: "1", activity: "Running", duration: "3 hr", intensity: "Hard" },
 	]);
 	const addDataToList = function (newData) {
 		console.log(workouts);
@@ -17,6 +18,7 @@ function App() {
 
 	return (
 		<div>
+			<TitleCard />
 			<AddWorkout enterData={addDataToList} />
 
 			{workouts.map((workout) => (

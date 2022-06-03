@@ -1,7 +1,9 @@
 .card {
-	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin: 10px;
 	height: 300px;
 	background-color: #143f6b;
 	border-radius: 10px;
-	z-index: 900;
+	position: relative;
 }

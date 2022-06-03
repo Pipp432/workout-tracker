@@ -3,7 +3,7 @@ import "./AddWorkout.css";
 import { useState } from "react";
 
 const AddWorkout = (props) => {
-	let key = 2;
+	const [key, setKey] = useState(2);
 	const [activity, setActivity] = useState("");
 	const [duration, setDuration] = useState("");
 	const [intensity, setIntensity] = useState("");
@@ -21,11 +21,11 @@ const AddWorkout = (props) => {
 	const addData = function () {
 		props.enterData({
 			id: key.toString(),
-			activity: activity,
+			activity: inputToUppercase(activity),
 			duration: duration,
-			intensity: intensity,
+			intensity: inputToUppercase(intensity),
 		});
-		key++;
+		setKey(key + 1);
 		setOpen(false);
 		setActivity("");
 		setDuration("");
@@ -39,6 +39,12 @@ const AddWorkout = (props) => {
 		setActivity("");
 		setDuration("");
 		setIntensity("");
+	};
+	const inputToUppercase = function (input) {
+		if (typeof input !== "string") return;
+		else {
+			return input.substring(0, 1).toLocaleUpperCase() + input.substring(1);
+		}
 	};
 	if (!open) {
 		return (
@@ -83,12 +89,14 @@ const AddWorkout = (props) => {
 							onChange={handleChangeIntensity}
 						></input>
 					</div>
-					<button className='button' onClick={addData}>
-						Add
-					</button>
-					<button className='button-cancel' onClick={closeButtonHandler}>
-						Cancel
-					</button>
+					<div>
+						<button className='button' onClick={addData}>
+							Add
+						</button>
+						<button className='button-cancel' onClick={closeButtonHandler}>
+							Cancel
+						</button>
+					</div>
 				</Card>
 			</div>
 		);
