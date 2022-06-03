@@ -1,0 +1,13 @@
+.workout-list {
+	list-style: none;
+	padding: 0;
+	align-items: center;
+	background-color: #f55353;
+	width: 20%;
+	margin-top: 10px;
+	border-radius: 10px;
+	height: 95%;
+	border-color: #feb139;
+	border-width: 3px;
+	border-style: solid;
+}
