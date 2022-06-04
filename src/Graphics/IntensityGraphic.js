@@ -4,7 +4,7 @@ const IntensityGraphic = function (props) {
 		if (props.details.intensity === "Easy") return "easy";
 		if (props.details.intensity === "Medium") return "medium";
 		if (props.details.intensity === "Hard") return "hard";
-		else return 0;
+		else return "";
 	};
 
 	const classColor = "dot-" + processIntensity();
