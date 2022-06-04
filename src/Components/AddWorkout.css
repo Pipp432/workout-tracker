@@ -41,12 +41,13 @@
 	top: 30%;
 	left: 40%;
 	color: white;
-	background-color: #f55353;
+	background-color: #9ba3eb;
 	width: 200px;
 	height: 100px;
 	border-radius: 20px;
 	border-style: solid;
-	border-color: #f6f54d;
+	border-color: #242f9b;
+	border-width: 3px;
 	font-size: larger;
 }
 .button-open:hover {
