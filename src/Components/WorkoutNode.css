@@ -5,15 +5,37 @@
 	border-color: #242f9b;
 	border-width: 3px;
 	border-style: solid;
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+	transition: 0.5s;
+}
+.workout-list-open {
+	background-color: #9ba3eb;
+	width: 100px;
+	border-radius: 10px;
+	border-color: #242f9b;
+	border-width: 3px;
+	border-style: solid;
 	position: absolute;
 	left: 0;
 	top: 0;
 	display: block;
+	transition: 0.5s;
+}
+.workout-list:hover {
+	transform: translateX(10px);
+	background-color: aquamarine;
+}
+.workout-list-open:hover {
+	background-color: aquamarine;
 }
 .row {
 	display: flex;
 	position: absolute;
 }
+
 .graphic {
 	position: absolute;
 	right: 250px;

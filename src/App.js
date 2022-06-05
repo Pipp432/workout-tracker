@@ -1,8 +1,9 @@
 import "./App.css";
 import AddWorkout from "./Components/AddWorkout";
-import WorkoutNode from "./Components/WorkoutNode";
+
 import TitleCard from "./UI/TitleCard";
 import { useState } from "react";
+import List from "./UI/List";
 
 function App() {
 	const [workouts, setWorkouts] = useState([
@@ -17,13 +18,10 @@ function App() {
 	};
 
 	return (
-		<div>
+		<div className='app'>
 			<TitleCard />
 			<AddWorkout enterData={addDataToList} />
-
-			{workouts.map((workout) => (
-				<WorkoutNode workouts={workout} key={workout.id} />
-			))}
+			<List data={workouts} />
 		</div>
 	);
 }

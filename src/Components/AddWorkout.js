@@ -46,6 +46,7 @@ const AddWorkout = (props) => {
 			return input.substring(0, 1).toLocaleUpperCase() + input.substring(1);
 		}
 	};
+
 	if (!open) {
 		return (
 			<div>

@@ -1,5 +1,4 @@
 .head-text {
-	padding-top: 10px;
 	text-align: center;
 	color: white;
 }
@@ -18,6 +17,7 @@
 }
 .button:hover {
 	background-color: green;
+	border-color: mediumspringgreen;
 }
 .button-cancel {
 	background-color: dimgray;
@@ -35,6 +35,7 @@
 }
 .button-cancel:hover {
 	background-color: red;
+	border-color: tomato;
 }
 .button-open {
 	position: relative;
@@ -52,6 +53,7 @@
 }
 .button-open:hover {
 	background-color: green;
+	border-color: mediumspringgreen;
 }
 .inputForm {
 	font-size: large;
@@ -68,9 +70,7 @@ select {
 	width: 90%;
 	padding: 3px 10px;
 	margin: 8px 0;
-	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	box-sizing: border-box;
 	position: relative;
 }

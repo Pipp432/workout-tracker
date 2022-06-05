@@ -6,12 +6,13 @@ const IntensityGraphic = function (props) {
 		if (props.details.intensity === "Hard") return "hard";
 		else return "";
 	};
+	let i = 0;
 
 	const classColor = "dot-" + processIntensity();
 	return (
 		<div>
 			{Array.apply(null, Array(3)).map(() => (
-				<span className={classColor}></span>
+				<span className={classColor} key={"num" + i++}></span>
 			))}
 		</div>
 	);

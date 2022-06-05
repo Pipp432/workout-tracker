@@ -1,11 +1,10 @@
 import React from "react";
 import "./Workout.css";
+import ActivityGraphic from "../Graphics/ActivityGraphic";
 const Workout = (props) => {
 	return (
 		<div className='workout'>
-			<div>{props.details.activity}</div>
-			<div>{props.details.duration}</div>
-			<div>{props.details.intensity}</div>
+			<ActivityGraphic details={props.details}></ActivityGraphic>
 		</div>
 	);
 };
